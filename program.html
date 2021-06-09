@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Skillbox2.1</title>
+      <link rel="stylesheet" href="style.css">
+      <style> #customers {
+         font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+         color: #000;
+         border-collapse: collapse;
+         width: 100%;
+         }
+         #customers td, #customers th {
+         border: 5px solid rgb(135, 114, 138);
+         padding: 10px;
+         }
+         #customers tr:nth-child(even){background-color: #f2f2f2;}
+         #customers tr:hover {background-color: #91a7b6;}
+         #customers th {
+         padding-top: 12px;
+         padding-bottom: 12px;
+         text-align: left;
+         background-color: #7396d3;
+         color:#7396d3;
+         }
+      </style>
+   </head>
+   <body class="program-content">
+    <button class="btn-style" onclick="changeColor();">Сменить цвет фона</button>
+      <div class="container">
+         <a href="index.html" class="link-back">Назад</a>
+         <h1 class="h1-style">Информация о курсе</h1>
+         <h2 class="h2-style">Как работать на курсе?</h2>
+         <ol class="rounded">
+          <li><a href="#">Изучить теги</a></li>
+          <li><a href="#">Попрактиковаться</a></li>
+          <li><a href="#">Выполнить домашнее задание</a></li>
+        </ol>
+         <h2 class="h2-style">Описание курса</h2>
+
+         <blockquote>
+          <p>В первой части курса вы познакомитесь со стандартами Web 2.0, научитесь работать с макетами и форматировать код, освоите адаптивную верстку, а <b>по итогу</b> -- сможете создавать быстрые и удобные сайты, которые <b>точно понравятся пользователям.</b> <p>Вы поймете назначение <i>основных тегов HTML</i>, сможете <s>без усилий</s> стилизовать и размещать элементы с помощью CSS и сверстаете свой первый макет</p>.</p>
+        </blockquote>
+
+         <figure class="figure-style">
+            <img src="img/site1.jpeg" alt="Пример курсовой работы">
+            <figcaption>Курсовая работа</figcaption>
+         </figure>
+
+         <blockquote>
+          <p>Вторая часть курса сделает из вас настоящего мастера. Вы изучите сборщики проектов, научитесь верстать email-рассылки, разберетесь с анимацией на сайте.</p>
+          <p>Помимо этого, вы сверстаете фрагмент из интернет-магазина - главную страницу, страницу каталога и страницу товара!</p>
+        </blockquote>
+
+         <figure class="figure-style">
+            <img src="img/site2.jpeg" alt="Пример дипломного проекта">
+            <figcaption>Дипломный проект</figcaption>
+         </figure>
+         <h2 class="h2-style">Программа курса</h2>
+         <ol class="rounded">
+          <li><a href="#">Основы верстки</a></li>
+          <li><a href="#">HTML</a></li>
+          <li><a href="#">Формы и медиаэлементы</a></li>
+          <li><a href="#">Доступность</a></li>
+          <li><a href="#">Работа с макетом</a></li>
+          <li><a href="#">CSS</a></li>
+          <li><a href="#">Практика. Flexbox</a></li>
+          <li><a href="#">Адаптивность и кроссбраузерность</a></li>
+          <li><a href="#">JavaScript для верстальщика</a></li>
+          <li><a href="#">Бонус. Практикум</a></li>
+          <li><a href="#">Работа с хостингом</a></li>
+          <li><a href="#">Курсовая. Мини-проект в портфолио</a></li>
+        </ol>
+
+         <table id="customers" class="table-style" border="5" cellspacing="0" cellpadding="4" width="800">
+            <caption>Таблица тегов</caption>
+            <thead class="table-size">
+               <tr>
+                  <th class="cell" colspan="2">Блочные</th>
+                  <th class="cell" colspan="2">Строчные</th>
+               </tr>
+            </thead>
+            <tbody>
+               <tr>
+                  <td class="cell">
+                     <code> &#60;div&#62;Див&#60;/div&#62; </code>
+                  </td>
+                  <td class="cell">Тег div - строительный кирпичик без смысловой нагрузки</td>
+                  <td class="cell">
+                     <code>&#60;span&#62;Спан&#60;/span&#62;</code>
+                  </td>
+                  <td class="cell">Текстовый тег без смысловой нагрузки</td>
+               </tr>
+               <tr class="cell">
+                  <td class="cell">
+                     <code>&#60;p&#62;Параграф&#60;/p&#62;</code>
+                  </td>
+                  <td class="cell">Тег p - параграф текста</td>
+                  <td class="cell">
+                     <code> &#60;a href="#"&#62;Ссылка&#60;/a&#62; </code>
+                  </td>
+                  <td class="cell">Тег ссылки</td>
+               </tr>
+               <tr class="cell">
+                  <td class="cell">
+                     <code> &#60;h1&#62;Заголовок&#60;/h1&#62; </code>
+                  </td>
+                  <td class="cell">Тег заголовка. Различают 6 типов заголовков - h1-h6</td>
+                  <td class="cell">
+                     <code> &#60;a img src="#" alt="Картинка"&#62; </code>
+                  </td>
+                  <td class="cell">Тег картинки</td>
+               </tr>
+               <tr class="cell">
+                  <td class="cell">
+                     <code> &#60;ul&#62;Список&#60;/ul&#62; </code>
+                  </td>
+                  <td class="cell">Тег ненумерованного списка. Есть так же нумерованный - ol</td>
+                  <td class="cell">
+                     <code> &#60;ai&#62;Курсивный текст&#60;/i&#62; </code>
+                  </td>
+                  <td class="cell">Тег для выделения текста курсивом</td>
+               </tr>
+            </tbody>
+            <tfoot>
+               <tr class="cell">
+                  <th class="cell" colspan="4">Теперь вы знаете основные HTML-теги!</th>
+               </tr>
+            </tfoot>
+         </table>
+
+         <button class="btn-style" type="button" id="testBtn">Наши контакты</button>
+      </div>
+      <script src="./js/script.js"></script>
+
+      <form class="contact-form" id="contact-form_1" method="POST" enctype="multipart/form-data">
+         <p class="contact-form__title">Оставьте заявку на расчет стоимости курса</p>
+         <p class="contact-form__description"></p>
+         <div class="contact-form__input-wrapper">
+            <input name="name" type="text" class="contact-form__input contact-form__input_name" placeholder="Введите ваше имя">
+            <div class="contact-form__error contact-form__error_name"></div>
+         </div>
+         <div class="contact-form__input-wrapper">
+            <input name="tel" type="tel" class="contact-form__input contact-form__input_tel" placeholder="Введите ваш телефон">
+            <div class="contact-form__error contact-form__error_tel"></div>
+         </div>
+         <div class="contact-form__input-wrapper">
+            <input name="email" type="email" class="contact-form__input contact-form__input_email" placeholder="Введите ваш email">
+            <div class="contact-form__error contact-form__error_email"></div>
+         </div>
+         <button class="contact-form__button" type="submit"> Отправить </button>
+      </form>
+
+   </body>
+</html>
